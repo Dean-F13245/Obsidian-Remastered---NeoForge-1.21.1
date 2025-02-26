@@ -57,8 +57,20 @@ public class ObsidianRemastered
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.OBSIDIANINGOT);
+            event.accept(ModItems.OBSIDIAN_INGOT);
         }
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.OBSIDIAN_PICKAXE);
+            event.accept(ModItems.OBSIDIAN_AXE);
+            event.accept(ModItems.OBSIDIAN_SHOVEL);
+            event.accept(ModItems.OBSIDIAN_HOE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.OBSIDIAN_SWORD);
+            event.accept(ModItems.OBSIDIAN_AXE);
+        }
+
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
