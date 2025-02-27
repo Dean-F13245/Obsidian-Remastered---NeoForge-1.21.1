@@ -1,5 +1,6 @@
 package net.deanf.obsidianremastered;
 
+import net.deanf.obsidianremastered.block.ModBlocks;
 import net.deanf.obsidianremastered.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -40,6 +41,7 @@ public class ObsidianRemastered
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -68,6 +70,7 @@ public class ObsidianRemastered
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.OBSIDIAN_SWORD);
             event.accept(ModItems.OBSIDIAN_AXE);
+            event.accept(ModBlocks.TEST_BLOCK);
         }
 
 
