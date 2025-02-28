@@ -1,6 +1,7 @@
 package net.deanf.obsidianremastered.datagen;
 
 import net.deanf.obsidianremastered.item.ModItems;
+import net.deanf.obsidianremastered.block.ModBlocks;
 import net.deanf.obsidianremastered.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -81,6 +82,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .define('S', Items.STICK)
                     .unlockedBy("has_obsidian_ingot", has(ModItems.OBSIDIAN_INGOT.get()))
                     .save(recipeOutput);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_STAIRS.get(), 4)
+                    .pattern("O  ")
+                    .pattern("OO ")
+                     .pattern("OOO")
+                    .define('O', Items.OBSIDIAN)
+                    .unlockedBy("has_obsidian", has(Items.OBSIDIAN))
+                    .save(recipeOutput);
+
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBSIDIAN_SLAB.get(), 6)
+                    .pattern("OOO")
+                    .define('O', Items.OBSIDIAN)
+                    .unlockedBy("has_obsidian", has(Items.OBSIDIAN))
+                    .save(recipeOutput);
+
+
+
+
 
 
 

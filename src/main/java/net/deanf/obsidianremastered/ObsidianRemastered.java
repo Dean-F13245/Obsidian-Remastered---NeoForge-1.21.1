@@ -70,7 +70,10 @@ public class ObsidianRemastered
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.OBSIDIAN_SWORD);
             event.accept(ModItems.OBSIDIAN_AXE);
-            event.accept(ModBlocks.TEST_BLOCK);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.OBSIDIAN_SLAB);
+            event.accept(ModBlocks.OBSIDIAN_STAIRS);
         }
 
 

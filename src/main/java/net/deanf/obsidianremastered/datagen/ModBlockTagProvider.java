@@ -1,6 +1,7 @@
 package net.deanf.obsidianremastered.datagen;
 
 import net.deanf.obsidianremastered.ObsidianRemastered;
+import net.deanf.obsidianremastered.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -17,7 +18,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE);
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.OBSIDIAN_STAIRS.get())
+                .add(ModBlocks.OBSIDIAN_SLAB.get());
+
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.OBSIDIAN_STAIRS.get())
+                .add(ModBlocks.OBSIDIAN_SLAB.get());
 
     }
 }

@@ -1,4 +1,6 @@
-// 1.21.1	2025-02-27T04:03:51.2570762	Recipes
+// 1.21.1	2025-02-28T00:55:30.5608221	Recipes
+2bed4eafcdeca83f790acef4df7dc9ddc806cc58 data/obsidianremastered/advancement/recipes/building_blocks/obsidian_slab.json
+8a0128a4bbf7d3498722df3e55686e9b56e2236d data/obsidianremastered/advancement/recipes/building_blocks/obsidian_stairs.json
 858f3a006d28edc25d6854bdb629e28fbb0c40f7 data/obsidianremastered/advancement/recipes/misc/obsidian_ingot.json
 38b83b373b142f17b055cf01031963d3c8d9440c data/obsidianremastered/advancement/recipes/tools/obsidian_axe.json
 23ff1cc837b3a91b5e8e9857d6f1cc2ff2df296a data/obsidianremastered/advancement/recipes/tools/obsidian_hoe.json
@@ -10,4 +12,6 @@ a05a7a7ce795da1c01993d7441a02a7f834f5f8c data/obsidianremastered/recipe/obsidian
 2d44705700be0ab3a60220d5c899a29573e17370 data/obsidianremastered/recipe/obsidian_ingot.json
 ad6038ee84c51aed6d17db5780c1f9f6b48cd3d7 data/obsidianremastered/recipe/obsidian_pickaxe.json
 539365e0bdd2f541860bece81d0140fe92a49964 data/obsidianremastered/recipe/obsidian_shovel.json
+3727fb88a98de782e50481ff4237a816b16f8a79 data/obsidianremastered/recipe/obsidian_slab.json
+1091401eb0b2f4a0fdf6dc70b36f5573899a29c1 data/obsidianremastered/recipe/obsidian_stairs.json
 713ea4a2397a5d5bf042547462da11a9e40174af data/obsidianremastered/recipe/obsidian_sword.json
